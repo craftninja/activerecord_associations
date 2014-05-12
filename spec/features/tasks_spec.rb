@@ -18,7 +18,6 @@ feature 'Tasks' do
   end
 
   scenario 'Can see the user and attachment associated with a task' do
-    pending "Do me second"
     bob = User.create!(name: "Bob Smith")
 
     task = Task.create!(user_id: bob.id, description: "Run 10 miles")
